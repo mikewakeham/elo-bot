@@ -48,6 +48,9 @@ async def verify(interaction: discord.Interaction):
         return
     
     match = re.search(r'\((.*?)\)', nickname)
+    if match is None:
+        await interaction.response.send_message("There is no username surrounded by parentheses")
+        return
     roblox_name = match.group(1)
     if roblox_name is None:
         await interaction.response.send_message("There is no username surrounded by parentheses")
