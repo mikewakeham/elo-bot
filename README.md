@@ -19,13 +19,13 @@ is still at the bottom of the bot file
 Clone repository:
 
 ```
-git clone https://github.com/mikewakeham/roblox-elo-bot
+git clone https://github.com/mikewakeham/elo-bot
 ```
 
 Navigate to directory:
 
 ```
-cd roblox-elo-bot
+cd elo-bot
 ```
 
 Install dependencies:
