@@ -128,7 +128,7 @@ async def add(interaction: discord.Interaction, member: discord.Member, points: 
     new_elo = max(0, current_elo - points)
 
     updated_season_elo = await update_elo(member.id, new_elo, -points, member.guild)
-    await interaction.response.send_message(f"Added {points} points to {member.mention} | New ELO: {updated_season_elo} ({new_elo} total)")
+    await interaction.response.send_message(f"Subtracted {points} points from {member.mention} | New ELO: {updated_season_elo} ({new_elo} total)")
 
 
 @bot.tree.command(name="leaderboard", description="View the top players on the leaderboard.")
