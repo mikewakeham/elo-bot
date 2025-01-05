@@ -16,4 +16,4 @@ is still at the bottom of the bot file
 
 
 # Extra
-Add extra rows to bottom of google sheet so there is space for data
+Add extra rows to bottom of google sheet so there is space for all data
