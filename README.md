@@ -14,6 +14,25 @@ bot.run("DISCORD API TOKEN HERE")
 ```
 is still at the bottom of the bot file
 
+# Installation
+
+Clone repository:
+
+```
+git clone https://github.com/mikewakeham/roblox-elo-bot
+```
+
+Navigate to directory:
+
+```
+cd roblox-elo-bot
+```
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
 
 # Extra
 Add extra rows to bottom of google sheet so there is space for all data
