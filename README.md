@@ -34,5 +34,3 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-# Extra
-Add extra rows to bottom of google sheet so there is space for all data
