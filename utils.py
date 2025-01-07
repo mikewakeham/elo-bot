@@ -4,37 +4,13 @@ import re
 from db_utils import *
 
 def get_roblox_user_id(username):
-    # url = f"https://users.roblox.com/v1/users/search?keyword={username}"
-    # response = requests.get(url)
-    
-    # if response.status_code == 200:
-    #     data = response.json()
-        
-    #     if data.get('data'):
-    #         user_id = data['data'][0]['id']
-    #         return user_id
-    #     else:
-    #         print("User not found.")
-    #         return None
-    # elif response.status_code == 429:
-    #     return 429
-    # else:
-    #     print(f"Error: {response.status_code}")
-    #     return None
-
     try:
-        # Send the GET request to the Roblox profile URL
         response = requests.get(f"https://www.roblox.com/users/profile?username={username}")
         
-        # Check if the response is successful
         if response.status_code != 200:
             raise Exception("Invalid response")
 
-        # Use regex to extract the user ID from the URL
         user_id = re.search(r'\d+', response.url).group(0)
-
-        # Return the user ID
-        print(user_id)
         return user_id
 
     except Exception as e:
