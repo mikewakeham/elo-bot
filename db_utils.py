@@ -245,7 +245,7 @@ async def process_match_elo_update(interaction, message):
 
 
 def reset_seasonal_elo():
-    conn = sqlite3.connect('elo.sqlite')
+    conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
     cursor.execute("UPDATE players SET season_elo = 0")
     conn.commit()
